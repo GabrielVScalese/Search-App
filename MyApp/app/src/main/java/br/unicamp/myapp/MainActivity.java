@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                             "HOST:239.255.255.250:1800\r\n" +
                             "MAN:\"ssdp:discover\"\r\n" +
                             "MX: 2\r\n" +
-                            "ST: upnp:rootdevice\r\n\r\n";
+                            "ST: ssdp:all\r\n\r\n";
 
                     socket = new DatagramSocket(1800);
                     socket.setReuseAddress(true);
